@@ -1,0 +1,128 @@
+{ box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+}
+body { 
+  font-family: Arial, Helvetica, sans-serif; 
+}
+.navbar {
+  display: flex;                 
+  justify-content: space-between;  
+  align-items: center;
+  padding: 20px 90px;            
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;                 
+}
+
+.logo { height: 46px; display: block;
+   border-radius: 20px; 
+   
+   padding: 4px; }
+
+
+.nav-center {
+  flex: 1;                     
+  display: flex;
+  justify-content: right;}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 26px;                   
+  align-items: right;
+  margin: 0;
+  float: right;
+  padding: 0;
+    }
+
+
+.nav-links a {
+  text-decoration: none;
+  color: white;              
+  font-weight: 700;
+  font-size: 16px;
+}
+
+
+.nav-links a:hover { 
+  color: #75d275; 
+  text-decoration: underline; }
+
+.hero-section {
+  background-image: url("home_image.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding-top: 30px; 
+  position: relative;
+}
+.hero-inner {
+  max-width: 900px;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero-inner h1 {
+  font-size: 48px;
+  line-height: 1.05;
+  margin-bottom: 16px;
+  text-shadow: 0 3px 12px rgba(70, 68, 68, 0.45);
+}
+
+
+.hero-desc {
+  font-size: 16px;
+  color: rgba(255,255,255,0.95);
+  margin: 0 auto 22px;
+  max-width: 720px;
+  letter-spacing: 0.7px;
+  text-shadow: 0 2px 8px rgba(83, 79, 79, 0.35);
+}
+
+.hero-actions {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  min-width: 140px;
+  text-align: center;
+}
+
+
+.btn-primary {
+  background: #2f7a52;
+  color: #fff;
+  border: 2px solid rgba(0,0,0,0.05);
+  box-shadow: 0 6px 18px rgba(47,122,82,0.14);
+}
+
+
+.btn-outline {
+  background: rgba(255,255,255,0.92);
+  color: #2f7a52;
+  border: 2px solid #e6efe6;
+}
+
+
+@media (max-width: 700px) {
+  .hero-inner h1 { font-size: 30px; }
+  .nav-links { gap: 14px; font-size: 14px; }
+  .btn { min-width: 120px; padding: 10px 16px; }
+}
